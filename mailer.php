@@ -16,7 +16,7 @@
     $mail->SMTPAuth = TRUE;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
-    $mail->Username = "your_email_address_here"; // Email sender; change to your email
+    $mail->Username = "your_email_address"; // Email sender; change to your email
 
     // Password -> acquire from Google Account in the Security section
     // 1. Go to your Google account: https://myaccount.google.com/security?hl=en
