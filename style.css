@@ -1,0 +1,306 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #dbdada;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: #ffffff;
+    padding: 0px 34px;
+}
+
+.form_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 40px 0px;
+}
+
+.form_input label, .captcha label {
+    display: block;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form_input input, button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888888;
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.form_password label {
+    display: block;
+    font-size: 18px;
+    color:#000000;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+#login_btn, #register_btn, #submit_btn, #reset_btn, #verify_btn, #logout_btn {
+    text-transform: uppercase;
+    background: #7c8d44;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#submit_btn {
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+#reset_btn {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#verify_btn {
+    margin-bottom: 20px;
+}
+
+#logout_btn {
+    width: 482px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 34px;
+}
+
+#logout_btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#login_btn:hover, #register_btn:hover, #logout_btn:hover, 
+#submit_btn:hover, #reset_btn:hover, #verify_btn:hover {
+    background: #177245;
+}
+
+.password_validation {
+    background: #7c8d44;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.password_validation ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password_validation ul li {
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.password_validation ul li.valid {
+    color: #adff2f;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.password_validation ul li::before {
+    content: '\f192';
+    font-family: fontAwesome;
+    display: inline-flex;
+    margin-right: 12px;
+    margin-left: 4px;
+}
+
+.password_validation ul li.valid::before {
+    content: '\f00c';
+    color: #adff2f;
+}
+
+.login_link, .register_link {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.login_link a, .register_link a, .link a {
+    color: #7c8d44;
+    text-decoration: none;
+}
+
+.login_link a:hover, .register_link a:hover, .link a:hover, .link:hover {
+    color: #177245;
+}
+
+#toggleBtn {
+    position: relative;
+    margin-top: -42px;
+    float: right;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#toggleBtn::before {
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+
+#toggleBtn:hover {
+    background: #a9a9a9;
+}
+
+#toggleBtn.hide::before {
+    content: '\f070';
+}
+
+.form_message {
+    color: #af4242;
+    background-color: #fde8ec;
+    padding: 10px;
+    display: none;
+    transform: translateY(-20px);
+    font-size: 18px;
+    text-align: center;
+}
+
+.captcha_form {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        width:70%;
+    }
+}
+
+/* profile page */
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_image img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 160px;
+}
+
+.profile_image img {
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 10px solid #ffffff;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.profile_image img:hover {
+    transform: scale(1.1);
+}
+
+.card_content .fullname, .card_content .email {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card_content .email {
+    font-size: 20px;
+}
+
+.card_content .description {
+    font-size: 16px;
+    text-align: justify;
+    padding: 0px 34px;
+}
+
+/* otp form */
+.form_otp label {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.otp_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.otp_field {
+    border-radius: 5px;
+    font-size: 50px;
+    height: 72px;
+    width: 72px;
+    border: 1px solid #7c8d44;
+    margin: 5px;
+    text-align: center;
+    font-weight: 600;
+    outline: none;
+}
+
+.otp_field::-webkit-inner-spin-button,
+.otp_field::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.otp_field:valid {
+    border-color: #177245;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 600px) {
+    .otp_field {
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+    }
+}
