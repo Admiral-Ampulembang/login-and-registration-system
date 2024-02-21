@@ -35,7 +35,7 @@
                 // mailer file
                 // prepare mail to send Reset Password form to the inputted email with the hashed token
                 $mail = require 'mailer.php';
-                $mail->setFrom("jazzydonut123@gmail.com", "JazzyD"); // change to your email
+                $mail->setFrom("your_email_address"); // change to your email
                 $mail->addAddress($email);
                 $mail->Subject = "Password Reset";
                 $mail->Body = <<<END

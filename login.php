@@ -59,7 +59,7 @@
                         // mailer file
                         // prepare mail to send OTP to the inputted email
                         $mail = require 'mailer.php';
-                        $mail->setFrom("jazzydonut123@gmail.com", "JazzyD"); // change to your email
+                        $mail->setFrom("your_email_address"); // change to your email
                         $mail->addAddress($email);
                         $mail->Subject = "Verify OTP";
                         $mail->Body = <<<END

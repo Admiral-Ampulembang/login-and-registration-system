@@ -69,7 +69,7 @@
                     6. Fill the domain with localhost if you are running the program in your laptop using XAMPP
                     7. Click submit, then it will display the site key
                     8. Copy the site-key and paste it here -->
-                    <div class="g-recaptcha" data-sitekey="6LelC1wpAAAAAMxhJsnbHr0T67QBmyO9_-m6K5rV"></div>
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 </div>
             </div>
 
